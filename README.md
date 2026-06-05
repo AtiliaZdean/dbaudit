@@ -1,5 +1,5 @@
 # 🔍 dbaudit
-![CI](https://github.com/AtiliaZdean/dbaudit/actions/workflows/ci.yml/badge.svg)
+[![CI](https://github.com/AtiliaZdean/dbaudit/actions/workflows/ci.yml/badge.svg)](https://github.com/AtiliaZdean/dbaudit/actions/workflows/ci.yml)
 
 A command-line database auditing and vulnerability scanner for **PostgreSQL** and **MySQL**.
 
