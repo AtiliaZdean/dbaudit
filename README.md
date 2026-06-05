@@ -72,22 +72,26 @@ dbaudit scan --host localhost --db mydb --user root --db-type mysql
 ---
 
 ## Project Structure
+
+```
 dbaudit/
-├── dbaudit/
-│   ├── cli.py              # Entry point and CLI definition
-│   ├── connector.py        # Database connection layer
-│   ├── models.py           # Shared data structures (Finding, Severity)
-│   ├── reporter.py         # Terminal, JSON, and HTML output
-│   └── checks/
-│       ├── users.py        # User and account checks
-│       ├── permissions.py  # Privilege checks
-│       ├── config.py       # Configuration checks
-│       └── columns.py      # Sensitive column scanner
-├── .github/workflows/
-│   └── ci.yml              # GitHub Actions CI
-├── pyproject.toml
-├── .env.example
-└── README.md
+  dbaudit/
+    cli.py              - Entry point and CLI definition
+    connector.py        - Database connection layer
+    models.py           - Shared data structures (Finding, Severity)
+    reporter.py         - Terminal, JSON, and HTML output
+    checks/
+      users.py          - User and account checks
+      permissions.py    - Privilege checks
+      config.py         - Configuration checks
+      columns.py        - Sensitive column scanner
+  .github/
+    workflows/
+      ci.yml            - GitHub Actions CI
+  pyproject.toml
+  .env.example
+  README.md
+```
 
 ---
 
