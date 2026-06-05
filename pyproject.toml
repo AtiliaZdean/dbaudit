@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dbaudit"
+version = "0.1.0"
+description = "A database auditing and vulnerability scanner for PostgreSQL and MySQL"
+requires-python = ">=3.10"
+dependencies = [
+    "typer",
+    "rich",
+    "sqlalchemy",
+    "psycopg2-binary",
+    "pymysql",
+    "python-dotenv",
+]
+
+# when user types dbaudit in the terminal, run the app object inside dbaudit/cli.py
+[project.scripts]
+dbaudit = "dbaudit.cli:app"
