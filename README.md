@@ -1,4 +1,5 @@
 # 🔍 dbaudit
+![CI](https://github.com/AtiliaZdean/dbaudit/actions/workflows/ci.yml/badge.svg)
 
 A command-line database auditing and vulnerability scanner for **PostgreSQL** and **MySQL**.
 
@@ -103,7 +104,18 @@ dbaudit/
 
 ---
 
+## Future Improvements
+
+- [ ] Add `--fix` flag to auto-remediate safe misconfigurations (e.g. revoke public schema access)
+- [ ] MongoDB and MSSQL support
+- [ ] CVE lookup — cross-reference DB version against known vulnerabilities
+- [ ] Scheduled scans with email/Slack alerting
+- [ ] Baseline diffing — compare two scan results to detect new issues over time
+- [ ] Package to PyPI so users can install with `pip install dbaudit`
+
+---
+
 ## Author
 
-**Atilia Zainuddin** 
-— GitHub: [@AtiliaZdean](https://github.com/AtiliaZdean)
+**Atilia Zainuddin**
+- GitHub: [@AtiliaZdean](https://github.com/AtiliaZdean)
